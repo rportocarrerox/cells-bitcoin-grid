@@ -1,6 +1,6 @@
 bower_components*
 bower-*.json
-components
+# components
 node_modules
 .DS_Store
 

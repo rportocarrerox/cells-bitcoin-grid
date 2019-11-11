@@ -52,18 +52,31 @@
       };
     }
 
+
     cambio() {
       console.log('cambio', this.rows);
+    }
+
+    listBitcoinPrices(evt){
+      this.rows = [];
+      this.rows = evt;
+    }
+
+    actionChart(){
+      this.dispatchEvent(new Event('show-historical-chart'));
     }
 
     static get template() {
 
       return html `
-          <cells-st-button>
-            <button on-click="actionChart">Ver Chart</button>
-          </cells-st-button>
+
           <cells-sortable-table class="simple" show-sort-buttons sort-by="price" rows="[[rows]]" column-headers="[[headers]]">
           </cells-sortable-table>
+          <center>
+            <cells-st-button>
+              <button on-click="actionChart">Ver Chart</button>
+            </cells-st-button>
+          </center>
       
       `;
     }
