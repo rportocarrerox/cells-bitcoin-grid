@@ -48,17 +48,20 @@
           sortable: false
         }]},
 
-        rows: { type: Array, notify: true, value: [], observer: "cambio" }
+        rows: { type: Array, notify: true, value: [], observer: 'cambio' }
       };
     }
 
     cambio() {
-      console.log("cambio" , this.rows);
+      console.log('cambio', this.rows);
     }
 
     static get template() {
 
       return html `
+          <cells-st-button>
+            <button on-click="actionChart">Ver Chart</button>
+          </cells-st-button>
           <cells-sortable-table class="simple" show-sort-buttons sort-by="price" rows="[[rows]]" column-headers="[[headers]]">
           </cells-sortable-table>
       

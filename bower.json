@@ -9,7 +9,8 @@
   "dependencies": {
     "polymer": "Polymer/polymer#^2.0.0",
     "cells-molecule-grid-list": "^12.0.3",
-    "cells-sortable-table": "^0.5.2"
+    "cells-sortable-table": "^0.5.2",
+    "cells-st-button": "^12.0.5"
   },
   "devDependencies": {
     "cells-sass": "^2.0.0",
