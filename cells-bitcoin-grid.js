@@ -48,8 +48,12 @@
           sortable: false
         }]},
 
-        rows: { type: Array, value: [] }
+        rows: { type: Array, notify: true, value: [], observer: "cambio" }
       };
+    }
+
+    cambio() {
+      console.log("cambio" + rows);
     }
 
     static get template() {
