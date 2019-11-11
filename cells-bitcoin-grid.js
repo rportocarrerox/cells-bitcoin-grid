@@ -53,7 +53,7 @@
     }
 
     cambio() {
-      console.log("cambio" + rows);
+      console.log("cambio" , this.rows);
     }
 
     static get template() {
